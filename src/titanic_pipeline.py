@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 from titanic_preprocessing import TitanicPreprocess
-
+from titanic_forecast import TitanicForecast
 
 
 class TitanicPipeline:
@@ -30,12 +30,16 @@ class TitanicPipeline:
         print('Running TitanicPreprocess')
         self.preprocessed_data = tp.preprocess_data(titanic_data)
         print(self.preprocessed_data)
-        
-        # Save the preprocessed data
         self.preprocessed_data.to_csv(self.config_file['data']['processed_data_path'], index=False)
         print(f'Preprocessed data saved to {self.config_file["data"]["processed_data_path"]}')
 
- 
+        #Forecast
+        tf =TitanicForecast(self.args)
+        print('Running TitanicForecast')
+        self.output_table = tf.generate_predictions(self.preprocessed_data)
+        print(f'Output table saved to {self.config_file["data"]["output_data_path"]}')
+        print(self.output_table)
+        
 #---------------------------------------------------------------------------------------------        
 # MAIN SECTION 
 #---------------------------------------------------------------------------------------------

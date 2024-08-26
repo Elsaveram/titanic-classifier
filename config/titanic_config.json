@@ -1,7 +1,8 @@
 {
   "data": {
     "test_data_path": "data/titanic_test.csv",
-    "processed_data_path": "data/titanic_processed.csv"
+    "processed_data_path": "data/titanic_processed.csv",
+    "output_data_path": "data/titanic_output_table.csv"
   },
   "model": {
     "best_model_path": "models/titanic_RandomForestClassifier_full.pkl",
