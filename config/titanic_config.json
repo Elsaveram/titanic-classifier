@@ -1,0 +1,37 @@
+{
+  "data": {
+    "test_data_path": "data/titanic_test.csv",
+    "processed_data_path": "data/titanic_processed.csv"
+  },
+  "model": {
+    "best_model_path": "models/titanic_RandomForestClassifier_full.pkl",
+    "best_cutoff_threshold": 0.4012526976185753
+  },
+  "features": {
+    "model_features": ["Pclass", "Age", "FamilySize", "Sex_male", "Title_encoded", "Deck_encoded", "Fare_log"]
+  },
+  "scaler": {
+    "scaler_path": "models/scaler.pkl",
+    "columns_to_scale": ["Age", "Fare_log"]  
+  },
+  "mappings": {
+    "Title": {
+      "Master": 1,
+      "Miss": 2,
+      "Mr": 3,
+      "Mrs": 4,
+      "Dr": 5,
+      "Rev": 6
+    },
+    "Deck": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4,
+      "E": 5,
+      "F": 6,
+      "G": 7,
+      "U": 0
+    }
+  }
+}
