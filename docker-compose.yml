@@ -10,9 +10,13 @@ services:
   devops-test:
     build: src
     volumes: 
-      - ./src:/home/app/
-      - ./data:/home/app/
-      - ./notebooks:/home/app/
+      - ./src:/home/app/src
+      - ./data:/home/app/data
+      - ./notebooks:/home/app/notebooks
+      - ./models:/home/app/models
+      - ./scripts:/home/app/scripts
+      - ./config:/home/app/config
+      - ./tests:/home/app/tests
 
     entrypoint: /bin/sh
     stdin_open: true # docker run -i

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script runs the Titanic pipeline and associated tests.
 
@@ -20,7 +20,7 @@ TEST_DIR=tests
 
 # Step 1: Run the Titanic Pipeline
 echo "Step 1: Running Titanic Pipeline..."
-python3 src/titanic_pipeline.py --config $CONFIG_FILE
+poetry run python3 src/titanic_pipeline.py --config $CONFIG_FILE
 
 # Check if the pipeline ran successfully
 if [ $? -ne 0 ]; then
@@ -31,7 +31,7 @@ echo "Pipeline executed successfully."
 
 # Step 2: Run Unit Tests
 echo "Step 2: Running Unit Tests..."
-pytest --maxfail=5 --disable-warnings $TEST_DIR/test_titanic_preprocessing.py
+poetry run pytest --maxfail=5 --disable-warnings $TEST_DIR/test_titanic_preprocessing.py
 
 # Check if tests ran successfully
 if [ $? -ne 0 ]; then
