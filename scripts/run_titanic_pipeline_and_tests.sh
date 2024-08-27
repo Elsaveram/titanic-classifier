@@ -20,7 +20,7 @@ TEST_DIR=tests
 
 # Step 1: Run the Titanic Pipeline
 echo "Step 1: Running Titanic Pipeline..."
-python src/titanic_pipeline.py --config $CONFIG_FILE
+python3 src/titanic_pipeline.py --config $CONFIG_FILE
 
 # Check if the pipeline ran successfully
 if [ $? -ne 0 ]; then
