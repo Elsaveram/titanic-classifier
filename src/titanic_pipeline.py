@@ -37,6 +37,7 @@ class TitanicPipeline:
         tf =TitanicForecast(self.args)
         print('Running TitanicForecast')
         self.output_table = tf.generate_predictions(self.preprocessed_data)
+        self.output_table.to_csv(self.config_file['data']['output_data_path'], index=False)
         print(f'Output table saved to {self.config_file["data"]["output_data_path"]}')
         print(self.output_table)
         

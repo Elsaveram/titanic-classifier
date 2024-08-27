@@ -6,7 +6,7 @@
   },
   "model": {
     "best_model_path": "models/titanic_RandomForestClassifier_full.pkl",
-    "best_cutoff_threshold": 0.5331208800914683
+    "best_cutoff_threshold": 0.45612786064567745
   },
   "features": {
     "model_features": ["Pclass", "Age", "FamilySize", "Sex_male", "Title_encoded", "Deck_encoded", "Fare_log"]
