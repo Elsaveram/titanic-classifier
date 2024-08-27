@@ -25,4 +25,5 @@ __pycache__/
 # Ignore pytest cache
 .pytest_cache/
 
+# Preprocessed data
 data/titanic_processed.csv

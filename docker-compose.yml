@@ -7,7 +7,7 @@ services:
     volumes: 
       - .:/home/jovyan/
 
-  devops-test:
+  ops:
     build: src
     volumes: 
       - ./src:/home/app/src
