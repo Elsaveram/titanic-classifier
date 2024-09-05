@@ -2,15 +2,6 @@
 
 # This script runs the Titanic pipeline and associated tests.
 
-# To run this script, execute the following command in your terminal:
-# ./scripts/run_titanic_pipeline_and_tests.sh
-
-# Ensure this script is executable. If not, make it executable by running:
-# chmod +x ./scripts/run_titanic_pipeline_and_tests.sh
-
-# Load the necessary environment variables or modules if needed (uncomment the following lines if required)
-# source /path/to/your/environment/setup.sh
-
 # Set PYTHONPATH to point to the src folder so that modules can be imported correctly
 export PYTHONPATH=src
 
