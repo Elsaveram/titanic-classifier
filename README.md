@@ -2,6 +2,8 @@
 
 Este repositorio contiene un pipeline de clasificación desarrollado para el dataset del Titanic, como parte de una prueba técnica para construir un proyecto de machine learning "end to end". El objetivo es realizar un análisis exploratorio de datos (EDA), preprocesamiento, selección de modelos, evaluación del modelo seleccionado y despliegue del modelo seleccionado en producción. El pipeline final y los scripts están diseñados para ser fácilmente desplegados usando Docker.
 
+Puedes leer más detalles sobre la implementación de este proyecto en mi [blog post](https://nycdatascience.com/blog/student-works/building-a-titanic-classifier-with-end-to-end-machine-learning-pipeline/).
+
 ## Dataset
 
 El dataset utilizado en este proyecto es el del Titanic, que se puede encontrar [aquí en Kaggle](https://www.kaggle.com/c/titanic/data?select=gender_submission.csv). El dataset proporciona información sobre los pasajeros a bordo del Titanic e incluye las siguientes características:
